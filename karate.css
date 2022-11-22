@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(33, 33, 33);
 }
 
 li, a, button{
@@ -11,6 +10,7 @@ li, a, button{
     font-size: 16px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    background-color: black;
 }
 
 header {
@@ -24,7 +24,6 @@ header {
 .logo {
     cursor: pointer;
     height: 80px
-    
 }
 
 .nav-links {
@@ -35,21 +34,38 @@ header {
 .nav-links li {
     display: inline-block;
     padding: 0px 20px;
+    background-color: black;
 }
 
 .nav-links li a:hover{
-    color: rgb(93, 0, 0);
+    color: rgb(121, 1, 1);
+    background-color: black;
 }
 
 button {
     padding: 9px 25px;
     background-color: rgb(0, 0, 0);
     border: none;
-    border-radius: 50px;
+    border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(121, 1, 1);
+}
+
+.back-image {
+    background-image: url('./Fotky/EwmecbsXEAEEaZD.jpg'); 
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: brightness(0.25);
+    -webkit-filter: brightness(0.25);
+}
+
+.img-text1{
+    display: flex;
 }
