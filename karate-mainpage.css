@@ -100,3 +100,20 @@ p{
 .card:hover{
     transform: translateY(-10px);
 }
+/* KATA */
+.karate-info{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px azure;
+}
+#kum-kat{
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+}
+.col p{
+    margin-bottom: 20px; /* between paragraphs */  
+}
