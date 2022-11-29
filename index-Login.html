@@ -4,61 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="karate.css">
-    <title>Karate</title>
+    <link rel="stylesheet" href="karate-login.css">
+    <title>KARATE Login</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./Fotky/karate-kick-silhouette-free-vector.jpg" alt="logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="#">KATEGORIE</a></li>
-                <li><a href="#">O TURNAJI</a></li>
-            </ul>
-        </nav>
-        <a class="login-but" href="#"><button>Login</button></a>
-    </header>
-    <div class="login-body">
-        <div class="container">
-            <div class="heading">Registration</div>
-            <form action="#">
-                <div class="card-details">
-                    <div class="card-box">
-                        <span class="details">Name</span>
-                        <input type="text" placeholder="Enter your name">
-                    </div>
-                    <div class="card-box">
-                        <span class="details">Surname</span>
-                        <input type="text" placeholder="Enter your surname">
-                    </div>
-                    <div class="card-box">
-                        <span class="details">Club</span>
-                        <input type="email" placeholder="Enter of your club">
-                    </div>
-                    <div class="card-box">
-                        <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email">
-                    </div>
-                    <div class="card-box">
-                        <span class="details">Password</span>
-                        <input type="password" placeholder="Enter your password">
-                    </div>
-                    <div class="card-box">
-                        <span class="details">Confirm password</span>
-                        <input type="password" placeholder="Check your password">
-                    </div>
-                    <div class="circal-form">
-                        <span class="circal-title">Gender</span>
-                        <div class="category">
-                            <input type="radio" name="gender">Male
-                            <input type="radio" name="gender">Female
-                        </div>
-                    </div>
-                    <div class="button">
-                        <input type="submit" value="Register">
-                    </div>
+    <div class="container">
+        <h1 class="form-title">Registrace</h1>
+        <form action="#">
+            <div class="main-user-info">
+                <div class="registration-box">
+                    <label for="fullName">Celé jméno</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Zadejte vaše jméno"/>
                 </div>
-            </form>
-        </div>
-    </div>
+                <div class="registration-box">
+                    <label for="clubName">Klub</label>
+                    <input type="text" id="clubName" name="clubName" placeholder="Zadejte jméno klubu"/>
+                </div>
+                <div class="registration-box">
+                    <label for="fullName">Věk</label>
+                    <input type="number" id="age" name="age" placeholder="Zadejte váš věk v době závodu"/>
+                </div>
+                <div class="registration-box">
+                    <label for="weight">Váha</label>
+                    <input type="number" id="weight" name="weight" placeholder="Zadejte vaši hmotnost"/>
+                </div>
+                <div class="registration-box">
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Zadejte váš email"/>
+                </div>
+                <div class="registration-box">
+                    <label for="password">Heslo</label>
+                    <input type="password" id="password" name="password" placeholder="Zadejte vaše heslo"/>
+                </div>
+                <div class="registration-box">
+                    <label for="check-password">Potvrzení hesla</label>
+                    <input type="password" id="check-password" name="check-password" placeholder="Potvrďte vaše heslo"/>
+                </div>
+            </div>
+            <div class="gender-box">
+                <span class="gender-title">Pohlaví</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Muž</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="male">Žena</label>
+                </div>
+            </div>
+            <div class="submit-butt">
+                <input type="submit" value="Registrovat">
+            </div>
+        </form>
